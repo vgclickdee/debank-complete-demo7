@@ -1,59 +1,7 @@
 <template>
-
-
-
-<div class="d-flex justify-content-end mb-5 mt-0">
-    
-    <!--begin::Invite user-->
-    <!-- <div class="d-flex ms-3">
-      <a
-        href="#"
-        class="btn btn-flex flex-center btn-bg-white btn-text-gray-500 btn-active-color-primary w-40px w-md-auto h-40px px-0 px-md-6"
-        tooltip="New Member"
-        data-bs-toggle="modal"
-        data-bs-target="#kt_modal_invite_friends"
-      >
-        <span class="svg-icon svg-icon-2 svg-icon-primary me-0 me-md-2">
-          <inline-svg src="media/icons/duotune/arrows/arr075.svg" />
-        </span>
-        <span class="d-none d-md-inline">Add New Wallet</span>
-      </a>
-    </div>
-
-    <div class="d-flex ms-3">
-      <a
-        href="#"
-        class="btn btn-flex flex-center btn-bg-white btn-text-gray-500 btn-active-color-primary w-40px w-md-auto h-40px px-0 px-md-6"
-        tooltip="New App"
-        data-bs-toggle="modal"
-        data-bs-target="#kt_modal_create_app"
-        id="kt_toolbar_primary_button"
-      >
-        <span class="svg-icon svg-icon-2 svg-icon-primary me-0 me-md-2">
-          <inline-svg src="media/icons/duotune/general/gen005.svg" />
-        </span>
-        <span class="d-none d-md-inline">Tax Report</span>
-      </a>
-    </div>
-    <div class="d-flex align-items-center ms-3">
-      <div
-        class="btn btn-icon btn-primary w-40px h-40px pulse pulse-white"
-        id="kt_drawer_chat_toggle"
-      >
-        <span class="svg-icon svg-icon-2">
-          <inline-svg src="media/icons/duotune/communication/com012.svg" />
-        </span>
-        <span class="pulse-ring"></span>
-      </div>
-    </div> -->
-  </div>
-
-<!--begin::Navbar-->
   <div class="card mb-5 mb-xl-10">
     <div class="card-body pt-9 pb-0">
-      <!--begin::Details-->
       <div class="d-flex flex-wrap flex-sm-nowrap mb-3">
-        <!--begin: Pic-->
         <div class="me-7 mb-4">
           <div
             class="
@@ -62,27 +10,9 @@
             "
           >
             <img src="media/avatars/300-1.jpg" alt="image" />
-            <!-- <div
-              class="
-                position-absolute
-                translate-middle
-                bottom-0
-                start-100
-                mb-6
-                bg-success
-                rounded-circle
-                border border-4 border-white
-                h-20px
-                w-20px
-              "
-            ></div> -->
           </div>
         </div>
-        <!--end::Pic-->
-
-        <!--begin::Info-->
         <div class="flex-grow-1">
-          <!--begin::Title-->
           <div
             class="
               d-flex
@@ -92,9 +22,7 @@
               mb-2
             "
           >
-            <!--begin::User-->
             <div class="d-flex flex-column">
-              <!--begin::Name-->
               <div class="d-flex align-items-center mb-2">
                 <a
                   href="#"
@@ -106,18 +34,7 @@
                     <inline-svg src="media/icons/duotune/general/gen026.svg" />
                   </span>
                 </a>
-
-                <!-- <a
-                  href="#"
-                  class="btn btn-sm btn-light-success fw-bolder ms-2 fs-8 py-1 px-3"
-                  data-bs-toggle="modal"
-                  data-bs-target="#kt_modal_upgrade_plan"
-                  >Upgrade to Pro</a
-                > -->
               </div>
-              <!--end::Name-->
-
-              <!--begin::Info-->
               <div class="d-flex flex-wrap fw-bold fs-6 mb-4 pe-2">
                 <a
                   href="#"
@@ -136,32 +53,8 @@
                   </span>
                   0x9c5083dd4838e120dbeac44c052179692aa5dac5
                 </a>
-                <!-- <a
-                  href="#"
-                  class="d-flex align-items-center text-gray-400 text-hover-primary me-5 mb-2"
-                >
-                  <span class="svg-icon svg-icon-4 me-1">
-                    <inline-svg src="media/icons/duotune/general/gen018.svg" />
-                  </span>
-                  SF, Bay Area
-                </a>
-                <a
-                  href="#"
-                  class="d-flex align-items-center text-gray-400 text-hover-primary mb-2"
-                >
-                  <span class="svg-icon svg-icon-4 me-1">
-                    <inline-svg
-                      src="media/icons/duotune/communication/com011.svg"
-                    />
-                  </span>
-                  max@kt.com
-                </a> -->
               </div>
-              <!--end::Info-->
             </div>
-            <!--end::User-->
-
-            <!--begin::Actions-->
             <div class="d-flex my-4">
               <a
                 href="#"
@@ -181,32 +74,11 @@
                 data-bs-target="#kt_modal_offer_a_deal"
                 >Follow</a
               >
-
-              <!--begin::Menu-->
-              <!-- <div class="me-0">
-                <button
-                  class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary"
-                  data-kt-menu-trigger="click"
-                  data-kt-menu-placement="bottom-end"
-                  data-kt-menu-flip="top-end"
-                >
-                  <i class="bi bi-three-dots fs-3"></i>
-                </button>
-                <Dropdown3></Dropdown3>
-              </div> -->
-              <!--end::Menu-->
             </div>
-            <!--end::Actions-->
           </div>
-          <!--end::Title-->
-
-          <!--begin::Stats-->
           <div class="d-flex flex-wrap flex-stack">
-            <!--begin::Wrapper-->
             <div class="d-flex flex-column flex-grow-1 pe-8">
-              <!--begin::Stats-->
               <div class="d-flex flex-wrap">
-                <!--begin::Stat-->
                 <div
                   class="
                     border border-gray-300 border-dashed
@@ -218,7 +90,6 @@
                     mb-3
                   "
                 >
-                  <!--begin::Number-->
                   <div class="d-flex align-items-center">
                     <span class="svg-icon svg-icon-dark me-2">
                       <inline-svg src="media/icons/duotune/arrows/arr066.svg" />
@@ -232,15 +103,8 @@
                       832
                     </div>
                   </div>
-                  <!--end::Number-->
-
-                  <!--begin::Label-->
                   <div class="fw-bold fs-6 text-gray-400">Followers</div>
-                  <!--end::Label-->
                 </div>
-                <!--end::Stat-->
-
-                <!--begin::Stat-->
                 <div
                   class="
                     border border-gray-300 border-dashed
@@ -252,7 +116,6 @@
                     mb-3
                   "
                 >
-                  <!--begin::Number-->
                   <div class="d-flex align-items-center">
                     <span class="svg-icon svg-icon-3 svg-icon-dark me-2">
                       <inline-svg src="media/icons/duotune/arrows/arr065.svg" />
@@ -265,15 +128,8 @@
                       28
                     </div>
                   </div>
-                  <!--end::Number-->
-
-                  <!--begin::Label-->
                   <div class="fw-bold fs-6 text-gray-400">Following</div>
-                  <!--end::Label-->
                 </div>
-                <!--end::Stat-->
-
-                <!--begin::Stat-->
                 <div
                   class="
                     border border-gray-300 border-dashed
@@ -285,7 +141,6 @@
                     mb-3
                   "
                 >
-                  <!--begin::Number-->
                   <div class="d-flex align-items-center">
                     <span class="svg-icon svg-icon-3 svg-icon-dark me-2">
                       <inline-svg src="media/icons/duotune/arrows/arr066.svg" />
@@ -299,19 +154,10 @@
                       1342
                     </div>
                   </div>
-                  <!--end::Number-->
-
-                  <!--begin::Label-->
                   <div class="fw-bold fs-6 text-gray-400">Rank</div>
-                  <!--end::Label-->
                 </div>
-                <!--end::Stat-->
               </div>
-              <!--end::Stats-->
             </div>
-            <!--end::Wrapper-->
-
-            <!--begin::Progress-->
             <div
               class="
                 d-flex
@@ -339,15 +185,9 @@
                 ></div>
               </div>
             </div>
-            <!--end::Progress-->
           </div>
-          <!--end::Stats-->
         </div>
-        <!--end::Info-->
       </div>
-      <!--end::Details-->
-
-      <!--begin::Navs-->
       <div class="d-flex overflow-auto h-55px">
         <ul
           class="
@@ -358,7 +198,6 @@
             flex-nowrap
           "
         >
-          <!--begin::Nav item-->
           <li class="nav-item">
             <router-link
               to="/crafted/account/overview"
@@ -368,8 +207,6 @@
               Portfolio
             </router-link>
           </li>
-          <!--end::Nav item-->
-          <!--begin::Nav item-->
           <li class="nav-item">
             <router-link
               to="/crafted/account/settings"
@@ -379,8 +216,6 @@
               NFTs
             </router-link>
           </li>
-          <!--end::Nav item-->
-          <!--begin::Nav item-->
           <li class="nav-item">
             <router-link
               to="/crafted/account/settings"
@@ -390,8 +225,6 @@
               History
             </router-link>
           </li>
-          <!--end::Nav item-->
-          <!--begin::Nav item-->
           <li class="nav-item">
             <router-link
               to="/crafted/account/settings"
@@ -401,21 +234,16 @@
               Approvals
             </router-link>
           </li>
-          <!--end::Nav item-->
         </ul>
       </div>
-      <!--begin::Navs-->
     </div>
   </div>
-  <!--end::Navbar-->
-
-
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
 
 export default defineComponent({
-  name: "profile"
+  name: "profile",
 });
 </script>
