@@ -1,7 +1,7 @@
 import { createRouter, createWebHashHistory, RouteRecordRaw } from "vue-router";
 import store from "@/store";
 import { Mutations, Actions } from "@/store/enums/StoreEnums";
-import JwtService from "../../../demo1/src/core/services/JwtService";
+import JwtService from "../../src/core/services/JwtService";
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -14,6 +14,24 @@ const routes: Array<RouteRecordRaw> = [
         name: "dashboard",
         component: () => import("@/views/Dashboard.vue"),
       },
+      {
+        path: "/portfolio",
+        name: "portfolio",
+        component: () => import("@/views/portfolio/Account.vue"),
+        children: [
+          {
+            path: "portfolio",
+            name: "account-portfolio",
+            component: () => import("@/views/portfolio/Portfolio.vue"),
+          },
+          {
+            path: "settings",
+            name: "account-settings",
+            component: () => import("@/views/crafted/account/Settings.vue"),
+          },
+        ],
+      },
+      
       {
         path: "/builder",
         name: "builder",
