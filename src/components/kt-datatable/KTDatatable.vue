@@ -3,7 +3,7 @@
     <div class="table-responsive">
       <table
         :class="[loading && 'overlay overlay-block']"
-        class="table align-middle table-row-dashed fs-6 gy-5 dataTable no-footer"
+        class="table align-middle gs-0 gy-4"
         id="kt_customers_table"
         role="grid"
       >
@@ -11,7 +11,7 @@
         <thead>
           <!--begin::Table row-->
           <tr
-            class="text-start text-gray-400 fw-bolder fs-7 text-uppercase gs-0"
+            class="fw-bolder text-muted bg-light w-100"
             role="row"
           >
             <template v-for="(cell, i) in tableHeader" :key="i">
@@ -23,7 +23,7 @@
                   )
                 "
                 :class="[
-                  cell.name && 'min-w-125px',
+                  cell.name && 'min-w-100px',
                   cell.sortable !== false && 'sorting',
                   tableHeader.length - 1 === i && 'text-end',
                   currentSort ===
@@ -38,7 +38,7 @@
                 colspan="1"
                 style="cursor: pointer"
               >
-                {{ cell.name }}
+                <strong class="text-dark">{{ cell.name }}</strong>
               </th>
             </template>
           </tr>

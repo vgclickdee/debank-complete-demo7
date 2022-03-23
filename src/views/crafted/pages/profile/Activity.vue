@@ -82,6 +82,10 @@
           role="tabpanel"
           aria-labelledby="kt_activity_today_tab"
         >
+
+
+
+
           <!--begin::Timeline-->
           <div class="timeline">
             <KTActivityItem1></KTActivityItem1>
@@ -94,6 +98,13 @@
             <KTActivityItem8></KTActivityItem8>
           </div>
           <!--end::Timeline-->
+
+
+
+
+
+
+
         </div>
         <!--end::Tab panel-->
 
@@ -104,6 +115,10 @@
           role="tabpanel"
           aria-labelledby="kt_activity_week_tab"
         >
+
+
+
+
           <!--begin::Timeline-->
           <div class="timeline">
             <KTActivityItem2></KTActivityItem2>
@@ -113,6 +128,10 @@
             <KTActivityItem6></KTActivityItem6>
           </div>
           <!--end::Timeline-->
+
+
+
+
         </div>
         <!--end::Tab panel-->
 
@@ -123,6 +142,11 @@
           role="tabpanel"
           aria-labelledby="kt_activity_month_tab"
         >
+
+
+
+
+
           <!--begin::Timeline-->
           <div class="timeline">
             <KTActivityItem5></KTActivityItem5>
@@ -133,6 +157,11 @@
             <KTActivityItem4></KTActivityItem4>
           </div>
           <!--end::Timeline-->
+
+
+
+
+
         </div>
         <!--end::Tab panel-->
 
@@ -143,6 +172,12 @@
           role="tabpanel"
           aria-labelledby="kt_activity_year_tab"
         >
+
+
+
+
+
+
           <!--begin::Timeline-->
           <div class="timeline">
             <KTActivityItem3></KTActivityItem3>
@@ -151,6 +186,11 @@
             <KTActivityItem6></KTActivityItem6>
           </div>
           <!--end::Timeline-->
+
+
+
+
+          
         </div>
         <!--end::Tab panel-->
       </div>
