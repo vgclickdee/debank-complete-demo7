@@ -25,9 +25,9 @@ const routes: Array<RouteRecordRaw> = [
             component: () => import("@/views/portfolio/Portfolio.vue"),
           },
           {
-            path: "settings",
-            name: "account-settings",
-            component: () => import("@/views/crafted/account/Settings.vue"),
+            path: "history",
+            name: "account-history",
+            component: () => import("@/views/history/History.vue"),
           },
         ],
       },
