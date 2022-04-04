@@ -3,6 +3,9 @@
   <div class="d-flex flex-shrink-0">
     <!--begin::Invite user-->
     <div class="d-flex ms-3">
+      <KTSearch></KTSearch>
+    </div>
+    <div class="d-flex ms-3">
       <a
         href="#"
         class="btn btn-flex flex-center btn-bg-white btn-text-gray-500 btn-active-color-primary w-40px w-md-auto h-40px px-0 px-md-6"
@@ -55,9 +58,11 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-
+import KTSearch from "@/views/Search/Search.vue";
 export default defineComponent({
   name: "topbar",
-  components: {},
+  components: {
+    KTSearch,
+  },
 });
 </script>

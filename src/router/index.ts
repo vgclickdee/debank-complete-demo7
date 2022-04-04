@@ -15,23 +15,50 @@ const routes: Array<RouteRecordRaw> = [
         component: () => import("@/views/Dashboard.vue"),
       },
       {
+        path: "/vote",
+        name: "vote",
+        component: () => import("@/views/vote/Vote.vue"),
+        children: [
+          {
+            path: "newProposals",
+            name: "newProposals",
+            component: () => import("@/views/vote/NewProposals.vue"),
+          },
+          {
+            path: "processedProposals",
+            name: "processedProposals",
+            component: () => import("@/views/crafted/account/Settings.vue"),
+          },
+          {
+            path: "myProposals",
+            name: "myProposals",
+            component: () => import("@/views/crafted/account/Settings.vue"),
+          },
+        ],
+      },
+      {
         path: "/portfolio",
         name: "portfolio",
         component: () => import("@/views/portfolio/Account.vue"),
         children: [
           {
             path: "portfolio",
-            name: "account-portfolio",
+            name: "portfolio",
             component: () => import("@/views/portfolio/Portfolio.vue"),
           },
           {
-            path: "settings",
-            name: "account-settings",
-            component: () => import("@/views/crafted/account/Settings.vue"),
+            path: "nfts",
+            name: "nfts",
+            component: () => import("@/views/nfts/NFTS.vue"),
+          },
+          {
+            path: "history",
+            name: "history",
+            component: () => import("@/views/history/History.vue"),
           },
         ],
       },
-      
+
       {
         path: "/builder",
         name: "builder",
